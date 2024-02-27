@@ -1,0 +1,31 @@
+.about-us-icon i, .color-text, .footer-nav ul li a:hover, .footer-style3 .social-icon-circle a, .header-menu .active, .header-nav .menu > li > a.active:before, .header-nav .menu > li > a:hover, .header-nav .menu > ul li ul li a:hover, .social-icon-circle a, .social-icons i, .style-single-item:hover h5 {
+    color: #bf9456
+}
+
+.item-name, .title p, .widget p, a, h2, h3, h4, h5 {
+    color: #333
+}
+
+.client-say, .client-say-area-style2 h4, .dark-bg .header-nav .menu > li > a, .dark-bg h2, .dark-bg h4, .dark-bg li, .dark-bg p, .footer-nav ul li a, .header-menu li a, .overlay h2, .overlay p, .pane2 a::after, .social-icon-circle a:hover, .social-icons a:hover, .tab-content h4, .tab-content-inner, .work-experience:hover .about-us-icon i, .work-icon i, .work > h3 {
+    color: #fff
+}
+
+.style-image-holder {
+    background-color: #fff
+}
+
+.client-say-item2:before, .header-nav .menu > li > a.active::after, .our-work-list, .pane2 a::after, .social-icon-circle a:hover, .work, .work-experience:hover .about-us-icon i {
+    background-color: #bf9456
+}
+
+.dark-bg {
+    background-color: #222
+}
+
+.about-us-icon, .plans-item ul li a:hover, .service-icon:hover, .social-icon-circle a:hover {
+    border-color: #bf9456
+}
+
+.about-us-icon i {
+    border-color: #fff
+}
