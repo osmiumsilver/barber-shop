@@ -9,7 +9,7 @@ body {
 }
 
 .img-slider img {
-  height: 720px;
+  height: 540px;
   width: 1080px;
 }
 
@@ -96,21 +96,27 @@ body {
 }
 
 .section2 .container .items {
-  margin: 10px;
-  width: 250px;
+  
+  margin: 13px;
+  padding: 13px;
+  width: 300px;
   height: 350px;
   background-color: white;
   border: 2.5px solid black;
-  border-radius: 12px;
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* border-radius: 12px; */
 }
 
 .section2 .container .items .name {
   text-align: center;
+  justify-content: center;
   background-color: rgb(240, 197, 6);
   height: 25px;
-  padding-top: 4px;
+  /* padding-top: 4px; */
   color: black;
-  margin: 0;
+  margin-top: 20px;
 }
 
 .section2 .container .items .price {
@@ -130,42 +136,48 @@ body {
 .section2 .container .items .img img {
   width: 250px;
   height: 200px;
-  margin: 0;
+  /* margin: auto; */
   padding: 0;
-  border-radius: 12px;
+  /* border-radius: 10px; */
   transition-duration: 0.8s;
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 
+}
+/* 
 .section2 .container .items .img {
   overflow: hidden;
   margin: 0;
-}
+} */
 
 .section2 .container .items:hover .img img {
-  transform: scale(1.2);
+  transform: scale(1.21);
   transition-duration: 0.8s;
-  border-radius: 12px;
+  /* border-radius: 10px; */
 }
-
+/* 
 @media screen and (max-width: 1250px) {
   .heading ul li {
     display: none;
-  }
+  } */
 
-  .items {
+  /* .items {
     transform: scale(0.9);
-  }
+  } */
 
-  .img-slider img {
+  /* .img-slider img {
     height: 60vw;
     width: 80vw;
-  }
+  } */
 
-  .ham:active {
+  /* .ham:active {
     color: red;
-  }
+  } */
 
-  .menu {
+  /* .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,9 +230,9 @@ body {
 
   .menu ul li a:hover {
     color: rgb(240, 197, 6);
-  }
+  } */
 
-  .img-slider {
+  /* .img-slider {
     display: flex;
     float: left;
     position: relative;
@@ -230,14 +242,12 @@ body {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     transition-duration: 2s;
-  }
+  } */
 
-  .section1 {
+  /* .section1 {
     width: 80%;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     margin: 0px auto;
-  }
-
-}
+  } */

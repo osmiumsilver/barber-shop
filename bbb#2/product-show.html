@@ -8,16 +8,17 @@
         body {
             margin-top: 2%;
             margin-left: 2%;
-            padding: 0;
-            height: 100vh;
+            /* padding: 0; */
+            height: 100%;
             /* 100% of viewport height */
-            width: 100vw;
+            width: 100%;
             /* 100% of viewport width */
             background: #555;
             /* align-items: center;
             justify-content: center; */
             display: flex;
-            max-height: min-content;
+            max-height: max-content;
+
             background-image: url('image/cut1.jpg');
             background-size: cover;
             /* Cover the entire background */
@@ -26,8 +27,6 @@
             background-repeat: no-repeat;
             /* Do not repeat the background image */
             /* Optional: You can set other background properties here such as background-color */
-
-
         }
 
         .content {
@@ -85,14 +84,21 @@
         // Define product details based on product ID (you can replace this with actual product data from a database)
         const products = {
             'product1': {
-                imageUrl: 'https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                imageUrl: 'image/p1.jpeg',
                 name: 'SHOES',
                 price: '$5',
                 info: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
             },
             'product2': {
+                imageUrl: 'https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 name: 'MENs T-SHIRT',
                 price: '$6.34',
+                info: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+            },
+            'product3': {
+                imageUrl: 'https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                name: 'MENs T-SHIRT',
+                price: '$5.34',
                 info: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
             },
             // Add more products here with their details

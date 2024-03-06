@@ -545,8 +545,10 @@ section{
 	padding: 20px 5px;
 }
 .main-menu-style2 .logo{
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	/* padding-top: 30px; */
+	/* padding-bottom: 30px; */
 }
 .sticky-navbar .main-menu-style2 .logo{
 	padding-top: 23px;
