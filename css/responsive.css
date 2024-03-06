@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+.text-left
+{
+	text-align: left;
+}
+.text-right
+{
+	text-align: right;
+}
+
+
 .container,
 .container-md,
 .container-sm {
@@ -61,11 +71,69 @@
 
 @media only screen and (min-width: 200px) and (max-width: 1024px) and (orientation : portrait) {
     
+
+.navbar-menu
+{display:block}
+
+.css-menu{
+ transform: translateX(100%) scale(1, 0.1);
+  transform-origin: right;
+  transition: all 0.3s ease-out;
+position: absolute !important;
+
+top:160px;
+left:0;
+z-index:999;
+}
+.header-nav .menu
+{
+background: black;
+}
+.header-nav .menu > li {
+padding:0 !important
+}
+.css-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+display:block !important;
+}
+
+.css-menu ul li a {
+  transition: all 0.3s ease-out;
+  line-height: 1rem;
+  text-decoration: none;
+  color: #8a8d92;
+  display: block;
+  padding: 1rem;
+}
+    .navbar-menu::after{
+        content: "☰";
+        position: relative;
+      top: 35%;
+        font-size: 56px;
+        color: white;
+    }
+
+
+
+.navBtn:checked ~ .css-menu {
+  transform: translateX(0);
+  transition: all 0.3s ease-out;
+}
+
+
+
+.nav-bar .css-menu > .closebtn {
+    display: unset;
+}
+
     .our-protfolio-area .row{
         display: unset;
     }
 
-
+.our-work-area-style2 .our-work-area-style{
+display:grid}
 
 .product-grid{
     display: block;
@@ -130,7 +198,7 @@
 
     .header-nav .logo,
     .topbar {
-        display: none
+        display: block
     }
 
     .header-nav .menu>li>a.active::before {
