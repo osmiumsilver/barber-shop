@@ -32,7 +32,7 @@ p{
 	line-height: 26px;
 	margin-bottom: auto;
 }
-.client-say.zoomIn div .prev .next {
+#prev,#next {
 	color: white !important;
 }
 label{
@@ -43,7 +43,55 @@ img{
     object-fit: cover;
 }
 
+.closebtn{
+	display: none;
+}
 
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+  .sidenav li ul{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav li ul:hover {
+	color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
 
 h1,
 h2,
@@ -455,14 +503,18 @@ section{
 }
 
 
+.navbar-menu
+{
+display:none;
+}
 
 /*Header-Style-2*/
 .topbar-style2 {
 	padding: 22px 0;
 }
 .social-icons {
-	
-	font-size: 24px;
+    font-size: 24px;
+    padding-top: 15px;
 }
 
 .col-md-4 {
@@ -649,6 +701,7 @@ footer .widget ul li{
 	position: relative;
 	min-width: 177px;
 	padding-left: 27px;
+
 }
 
 .newsletter .form-control{
@@ -931,6 +984,7 @@ footer .widget p{
 .shoping-image-holder img{
 	height: 100%;
 	width: auto;
+
 }
 .shoping-single-item-inner{
 	margin-bottom: 60px
@@ -1089,13 +1143,13 @@ padding: 10px;
 	color: #bfbfbf;
 }
 /*FUN FACTS*/
-.client-say-qutue {
+.client-say-quote {
 	border: 1px solid rgba(0,0,0,.1);
 	padding: 50px 30px;
-	margin-top: 48px;
+	/* margin-top: 48px; */
 	margin-right: 1px;
 }
-.client-say-qute p{
+.client-say-quote p{
 	margin-bottom: 0;
 }
 
@@ -1319,6 +1373,22 @@ padding: 10px;
 	 padding: 5px 9px;
 	 display: block;
 }
+
+article{
+	display: block;
+	break-inside: avoid;
+		  width: 100%;
+  height: 400px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+.blog-post   {
+    padding: 0px 2px 0 2px;
+
+}
+
 article .film,
 article .graph{
 	right: 30px;
@@ -1327,6 +1397,7 @@ article .graph{
 .post-image-holder img{
 	height: auto;
 	width: 100%;
+		max-height: 100px;
 }
 .blog-post-content{
 	padding: 0 18px;
@@ -1510,7 +1581,10 @@ ul.post-date li a {
 /* ================================= */
 /* ----------- WORKING HOUR --------- */
 /* ================================= */
-/*working-hour-area*/
+.working-hour-area
+{
+padding-bottom: 250px;
+}
 .working-hour-item{
 	display: flex;
 }
@@ -1530,7 +1604,7 @@ ul.post-date li a {
 
 /*working-hour-area-Style2*/
 .working-hour-area-style2 {
-	background: url(..images/working-hour-bg.png) no-repeat scroll center center /cover;
+	background: url(../images/working-hour-bg.png) no-repeat scroll center center /cover;
 	background-attachment: fixed;
 }
 .working-day .day {
@@ -1538,6 +1612,7 @@ ul.post-date li a {
 	font-size: 25px;
 	margin-bottom: 18px;
 	text-transform: uppercase;
+letter-spacing: 2px;
 }
 .working-week{
 	display: table;
@@ -1553,6 +1628,7 @@ ul.post-date li a {
 	padding: 25px 1px;
 	position: relative;
 	z-index: 9;
+left: -116px;
 }
 .working-day .time {
 	font-weight: 600;
@@ -1637,11 +1713,17 @@ ul.post-date li a {
 	font-size: 16px;
 	padding-bottom: 17px;
 }
+ul li .price {
+    float: right;
+    ;
+}
+
 .top-deals ul {
 	margin-bottom: 32px;
 }
 .top-deals{
 	display: flex;
+	column-gap:0.875rem
 }
 .top-deals-separator {
 	align-items: center;
@@ -1660,12 +1742,13 @@ ul.post-date li a {
 	position: absolute;
 	padding-left: .25ch;
 	content: " . . . . . . . . . . . . . . . . . . . "
-		". . . . . . . . . . . . . . . . . . . . . . . "
+		
 		". . . . . . . . . . . . . . . . . . . . . . . ";
 	text-align: right;
   }
 .top-deals-price-left{
 	padding-right: 0;
+	width:50%
 }
 .top-deals-price-right{
 	padding-left: 0;
@@ -1935,7 +2018,7 @@ width: 100%;
 	padding: 0 38px;
 }
 .blog-main-content .content-wrap {
-    padding-right: 20px;
+  column-count: 5;
 }
 .blog-main-content .sidebar-wrap {
     padding-left: 20px;
