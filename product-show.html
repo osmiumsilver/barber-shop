@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+        body {
+            margin-top: 2%;
+            margin-left: 2%;
+            /* padding: 0; */
+            height: 100%;
+            /* 100% of viewport height */
+            width: 100%;
+            /* 100% of viewport width */
+            background: #555;
+            /* align-items: center;
+            justify-content: center; */
+            display: flex;
+            max-height: max-content;
+
+            background-image: url('images/cut1.jpg');
+            background-size: cover;
+            /* Cover the entire background */
+            background-position: center;
+            /* Center the background image */
+            background-repeat: no-repeat;
+            /* Do not repeat the background image */
+            /* Optional: You can set other background properties here such as background-color */
+        }
+
+        .content {
+
+            padding: 10px;
+        }
+
+        /* Style the button */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition-duration: 0.4s;
+        }
+
+        /* Change the background color on hover */
+        .button:hover {
+            background-color: red;
+        }
+
+        #productDetails {
+            color: black;
+            background-color: white;
+            border: 2px solid antiquewhite;
+            /* Border style */
+            padding: 10px;
+            margin-bottom: 5%;
+            /* Optional: Add padding for better spacing */
+        }
+    </style>
+
+    <title>Product Details</title>
+</head>
+
+<body>
+
+    <div style="margin-right:5%;"><a class="button" href="products.html">X</a></div>
+    <div class="content" id="productDetails">
+        <!-- Product details will be displayed here -->
+    </div>
+
+    <script>
+        // Get the product ID from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        // Define product details based on product ID (you can replace this with actual product data from a database)
+        const products = {
+            'product1': {
+                imageUrl: 'image/p1.jpeg',
+                name: 'SHOES',
+                price: '$5',
+                info: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+            },
+            'product2': {
+                imageUrl: 'https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                name: 'MENs T-SHIRT',
+                price: '$6.34',
+                info: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+            },
+            'product3': {
+                imageUrl: 'https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                name: 'MENs T-SHIRT',
+                price: '$5.34',
+                info: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.'
+            },
+            // Add more products here with their details
+        };
+
+        // Display the details of the selected product
+        const productDetailsContainer = document.getElementById('productDetails');
+        if (products.hasOwnProperty(productId)) {
+            const product = products[productId];
+            productDetailsContainer.innerHTML = `
+            <img src="${product.imageUrl}" alt="${product.name}" width = "400">
+                <h1>${product.name}</h1>
+                <p>Price: ${product.price}</p>
+                <p>${product.info}</p>
+                <!-- Add more product details here -->
+            `;
+        } else {
+            productDetailsContainer.innerHTML = "<p>Product not found.</p>";
+        }
+    </script>
+</body>
+
+</html>
