@@ -65,13 +65,19 @@
     .header-nav .container .main-menu-style2{
         display: block;
     }
-   
+    
 }
 
 
 @media only screen and (min-width: 200px) and (max-width: 1024px) and (orientation : portrait) {
-    
-
+    .working-week{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40px, 2fr));
+    }
+    .portfolio-style2 .portfolio-content {
+ 
+        font-size: 2rem;
+    }
 .navbar-menu
 {display:block}
 
@@ -128,12 +134,13 @@ display:block !important;
     display: unset;
 }
 
-    .our-protfolio-area .row{
+    .our-portfolio-area .row{
         display: unset;
     }
 
 .our-work-area-style2 .our-work-area-style{
-display:grid}
+display:grid;
+}
 
 .product-grid{
     display: block;
@@ -280,3 +287,10 @@ display:grid}
         margin-bottom: 0
     }
 }
+
+@media only screen and (min-width: 2400px) {
+    .our-work-area-style2{
+    max-width: 80%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    } }
