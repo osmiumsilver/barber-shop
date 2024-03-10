@@ -1,18 +1,17 @@
 @charset "UTF-8";
 
-.text-left
-{
-	text-align: left;
+.text-left {
+    text-align: left;
 }
-.text-right
-{
-	text-align: right;
+
+.text-right {
+    text-align: right;
 }
 
 
-.container,
-.container-md,
-.container-sm {
+.container
+
+{
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     padding-right: calc(var(--bs-gutter-x) * .5);
@@ -21,136 +20,227 @@
     margin-left: auto
 }
 
-@media (min-width: 576px) {
+/* Special max width just to fix stuff */
+/* 
+@media (min-width:  576px) {
 
-    .container,
-    .container-sm {
-        max-width: 540px
+
+    .container
+    {
+        max-width: 700px
     }
+
+  
+
+} */
+
+@media (max-width:  576px) {
+
+
+    .portfolio-content-inner
+    {
+        display: none;
+    }
+    #barbers {
+        display: block;
+
 }
 
+}
 
-@media (min-width: 992px) {
+@media (min-width:  992px) {
 
-    .container,
-    .container-md,
-    .container-sm {
+    .container
+    
+    {
         max-width: 960px
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width:  1200px) {
 
-    .container,
-    .container-md,
-    .container-sm {
+    .container
+    
+    {
         max-width: 1140px
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width:  1400px) {
 
-    .container,
-    .container-md,
-    .container-sm {
+    .container
+    
+    {
         max-width: 1320px
     }
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .header-nav .container{
+@media only screen and (min-width: 200px) and (max-width: 400px) and (orientation : portrait) {
+
+    .blog-main-content .content-wrap {
+        column-count: 1;
+    }
+
+    .topbar .container {
+        font-size: 0.6rem
+    }
+
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) and (orientation : portrait) {
+
+    .blog-main-content .content-wrap {
+        column-count: 1;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) and (orientation : portrait) {
+
+    .blog-main-content .content-wrap {
+        column-count: 2;
+    }
+}
+
+
+/* //i put it before to override css Put your CSS here for 768px to 1024px width devices(extra covers all width between 768px to 1024px tab;et//    */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-nav .container {
         max-width: unset;
     }
-    .header-nav .container .main-menu-style2{
+
+    /* this is a mistake */
+    /* .header-nav .container .main-menu-style2{
         display: block;
+    } */
+
+    .blog-main-content .content-wrap {
+        column-count: 3
     }
-    
 }
 
+
+/* //Put your CSS here for 200px to 1024 width devices (cover all mobile portrait width //         */
 
 @media only screen and (min-width: 200px) and (max-width: 1024px) and (orientation : portrait) {
-    .working-week{
+
+    .cookiebanner {
+        display: none;
+    }
+
+    .container .row>.col-md-6 {
+        display: none;
+    }
+
+    .css-menu {
+        width: 100%;
+    }
+
+    .queries-call {
+        padding-top: 4rem;
+    }
+
+    .working-week {
+        font-size: 1em;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40px, 2fr));
+        margin-left: unset;
     }
+
+    .working-day {
+        margin: auto;
+        padding: 25px 1px;
+    }
+
+
     .portfolio-style2 .portfolio-content {
- 
+
         font-size: 2rem;
     }
-.navbar-menu
-{display:block}
 
-.css-menu{
- transform: translateX(100%) scale(1, 0.1);
-  transform-origin: right;
-  transition: all 0.3s ease-out;
-position: absolute !important;
+    .navbar-menu {
+        display: block
+    }
 
-top:160px;
-left:0;
-z-index:999;
-}
-.header-nav .menu
-{
-background: black;
-}
-.header-nav .menu > li {
-padding:0 !important
-}
-.css-menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-display:block !important;
-}
+    .css-menu {
+        transform: translateX(100%) scale(1, 0.1);
+        transform-origin: right;
+        transition: all 0.3s ease-out;
+        position: absolute !important;
 
-.css-menu ul li a {
-  transition: all 0.3s ease-out;
-  line-height: 1rem;
-  text-decoration: none;
-  color: #8a8d92;
-  display: block;
-  padding: 1rem;
-}
-    .navbar-menu::after{
+        top: 160px;
+        left: 0;
+        z-index: 999;
+        display: none;
+    }
+
+    .header-nav .menu {
+        background: black;
+    }
+
+    .header-nav .menu>li {
+        padding: 0 !important
+    }
+
+    .css-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block !important;
+    }
+
+    .css-menu ul li a {
+        transition: all 0.3s ease-out;
+        line-height: 1rem;
+        text-decoration: none;
+        color: #8a8d92;
+        display: block;
+        padding: 1rem;
+    }
+
+    .navbar-menu::after {
         content: "☰";
         position: relative;
-      top: 35%;
+        top: 35%;
         font-size: 56px;
         color: white;
     }
 
 
 
-.navBtn:checked ~ .css-menu {
-  transform: translateX(0);
-  transition: all 0.3s ease-out;
-}
-
-
-
-.nav-bar .css-menu > .closebtn {
-    display: unset;
-}
-
-    .our-portfolio-area .row{
+    .navBtn:checked~.css-menu {
+        transform: translateX(0);
+        transition: all 0.3s ease-out;
         display: unset;
     }
 
-.our-work-area-style2 .our-work-area-style{
-display:grid;
-}
 
-.product-grid{
-    display: block;
-}
 
-    .container,
-    .container-md,
-    .container-sm {
-        max-width: 720px
+    .nav-bar .css-menu>.closebtn {
+        display: unset;
     }
+
+    .our-portfolio-area .row {
+        display: flex;
+        align-items: center;
+        flex-direction:column
+    }
+
+    .our-work-area-style2 .our-work-area-style {
+        display: grid;
+    }
+
+    .product-grid {
+        display: block;
+    }
+
+    /* .container
+    
+    {
+        max-width: 720px
+    } */
 
     .appoinment-image-holder {
         display: none;
@@ -160,7 +250,7 @@ display:grid;
         display: block;
     }
 
-    /* //Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px //    */
+
 
     .main-menu-style2 .logo,
     .social-icons ul li span,
@@ -203,6 +293,10 @@ display:grid;
         text-align: left
     }
 
+    .working-hour-area>.container {
+        max-width: 420px;
+    }
+
     .header-nav .logo,
     .topbar {
         display: block
@@ -210,6 +304,14 @@ display:grid;
 
     .header-nav .menu>li>a.active::before {
         display: none
+    }
+
+    .top-deals ul>li .service::after {
+        content: " . ";
+    }
+
+    ul li .price {
+        float: unset
     }
 
     .work {
@@ -238,7 +340,7 @@ display:grid;
 
 
 
-    /* //Put your CSS here for 200px to 767px width devices (cover all mobile portrait width //         */
+
 
     .slider-content h2 {
         font-size: 30px
@@ -288,9 +390,11 @@ display:grid;
     }
 }
 
+/* super wide screen lol */
 @media only screen and (min-width: 2400px) {
-    .our-work-area-style2{
-    max-width: 80%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    } }
+    .our-work-area-style2 {
+        max-width: 80%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
