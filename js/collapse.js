@@ -1,15 +1,18 @@
-var coll = document.getElementsByClassName("collapsed");
-var i;
-for (i = 0; i < coll.length; i++) {
-   
-  coll[i].addEventListener("click", function() {
-    console.log(this.classList)
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+document.addEventListener('DOMContentLoaded', function() {
+    var accItem = document.getElementsByClassName('accordion-item');
+    var accHD = document.getElementsByClassName('accordion-item-heading');
+
+    for (var i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
     }
-  });
-}
+
+    function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (var i = 0; i < accItem.length; i++) {
+            accItem[i].className = 'accordion-item close';
+        }
+        if (itemClass == 'accordion-item close') {
+            this.parentNode.className = 'accordion-item open';
+        }
+    }
+});
