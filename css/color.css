@@ -1,5 +1,5 @@
 .about-us-icon i, .color-text, .footer-nav ul li a:hover, .footer-style3 .social-icon-circle a, .header-menu .active, .header-nav .menu > li > a.active:before, .header-nav .menu > li > a:hover, .header-nav .menu > ul li ul li a:hover, .social-icon-circle a, .social-icons i, .style-single-item:hover h5 {
-    color: #bf9456
+    color: #cfae7f
 }
 
 .item-name, .title p, .widget p, a, h2, h3, h4, h5 {
@@ -14,15 +14,13 @@
     background-color: #fff
 }
 
-.client-say-item2:before, .header-nav .menu > li > a.active::after, .our-work-list, .pane2 a::after, .social-icon-circle a:hover, .work, .work-experience:hover .about-us-icon i {
-    background-color: #bf9456
-}
+
 
 .dark-bg {
     background-color: #222
 }
 
-.about-us-icon, .plans-item ul li a:hover, .service-icon:hover, .social-icon-circle a:hover {
+.about-us-icon {
     border-color: #bf9456
 }
 

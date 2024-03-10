@@ -13,6 +13,8 @@
   <script src="js/slide.js"></script>
   <script src="js/nice.js"></script>
   <script src="js/app.js"></script>
+<script src="js/collapse.js"></script>
+
 </head>
 
 <body>
@@ -35,28 +37,28 @@
         </div> <!-- .row -->
       </div>
     </div><!-- .topbar -->
-    <nav class="header-nav" >
+    <nav class="header-nav">
       <div class="container sticky-header">
         <div class="row main-menu-style2">
-<input class="navBtn" id="navBtn" style="display:none;" type="checkbox"/>
-          <div class="logo"><a href="index.html"><img src="images/logo2.png" alt="Barber"></a></div>
+          <input class="navBtn" id="navBtn" style="display:none;" type="checkbox" />
+          <div class="logo"><a href="index.html"><img alt="Barber" src="images/logo.png"></a></div>
 
-          
-            <div class="css-menu">
-              <ul class="menu list-inline">
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html"  class="active">About</a></li>
-                <li><a href="service.html">Services</a></li>
-				  <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-              </ul>
-            </div>
-            <label class="navbar-menu" for="navBtn"></label>
+          <div class="css-menu">
+            <ul class="menu list-inline">
+
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="about-us.html">About</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
           </div>
+          <label class="navbar-menu" for="navBtn"></label>
         </div>
+      </div>
 
     </nav>
   </header>
@@ -67,11 +69,11 @@
     <div class="container">
       <div class="working-experience-area">
         <div class="title text-center title-margin-bottom-large">
-                  <h2>what we do</h2>
-                   <div class=" shape1"><i class="perch-comb-double"></i></div>
-        <p>FIND OUR TOP BARBER HERE BABY&nbsp; &nbsp;&nbsp;</p>
-      </div><!-- tittle -->
-    
+          <h2>what we do</h2>
+          <div class=" shape1"><i class="perch-comb-double"></i></div>
+          <p>FIND OUR TOP BARBER HERE BABY&nbsp; &nbsp;&nbsp;</p>
+        </div><!-- tittle -->
+
         <!-- col-md-4   <div class="col-md-4">                    
                   <div class="work-experience">
                     <div class="about-us-icon">
@@ -83,132 +85,145 @@
                   </div>
                 </div> -->
       </div><!-- .row -->
-      <div style="padding-top: 30px" class="row">
+      <div class="row" style="padding-bottom: 30px">
         <div class="col-md-6">
           <div class="work-experience-image-holder">
             <img src="images/work-image-holder.png" alt="image">
           </div>
         </div>
         <div class="col-md-5 col-md-offset-1">
-          <div class="acordean-item">
+         
 
 
 
             <div class="panel">
-              <button class="collapsed">    Trendy Hairstyles </button>
-              <div class="content">
-                <p>These days are all Happy and these share them with me oh baby the Brady Bunch the Brady way we all
-                  became the Brady Bunch one you smarter joinu Flipe Flipper faster.</p>
-                <p>All share them me oh baby the Brady Brady Bunch that's the way we all became the the no one you see
-                  is smarter.</p>
+
+
+              <div class="accordion-item open">
+                <h2 class="accordion-item-heading" >TRENDY HAIR STYLE<span>+</span></h2>
+
+                <div class="accordion-item-content">
+                  <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+                  <p>This simple accordion degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+                </div>
+
               </div>
-            </div><!-- panel -->
+              <div class="accordion-item close">
+                <h2 class="accordion-item-heading"> THE STORY OF US <span>+</span></h2>
+
+                <div class="accordion-item-content">
+                  <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+                  <p>This simple accordion degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+                </div>
 
 
 
-          </div><!-- acordean-item -->
+
+
+
+            </div>
+          </div>
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+      <div class="information-banner overlay">
+        <div class="row">
+
+          <div class="logo">
+            <img alt="logo" src="images/logo.png">
+          </div>
+
+          <div class=" text-center">
+            <h4 style="color: white">We Care your Hair! STUDENT CAN HAVE Grab 20% Discount</h4>
+          </div>
         </div>
-      </div><!-- .row -->
-
-    </div><!-- .container -->
-    <div style="width: 100%" class="book-now overlay">
-      <div class="row">
-
-        <div class="logo">
-          <img src="images/logo2.png" alt="logo">
-        </div>
-
-        <div class=" text-center">
-          <h4 style="color: white">We Care your Hair! STUDENT CAN HAVE Grab 20% Discount</h4>
-        </div>
-      </div><!-- .row -->
-    </div><!-- .book-now -->
+      </div>
   </section>
   <!--  Section-End -->
   <section class="padding-large-top">
     <div class="container">
-  <h2 style="text-align:center; margin-top: 10px">Our Team</h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img alt="Jane" src="images/client/owner.jpeg" style="width:100%">
-        <div class="container">
-          <h2>Jane Doe</h2>
-          <p class="title">CEO & Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>jane@example.com</p>
-          <p><button class="button">Contact</button></p>
+      <h2 style="text-align:center; margin-top: 10px">Our Team</h2>
+      <div class="row" id="barbers">
+        <div class="column">
+          <div class="card">
+            <img alt="Jane" src="images/client/owner.jpeg" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="column">
-      <div class="card">
-        <img alt="Mike" src="images/client/owner.jpeg" style="width:100%">
-        <div class="container">
-          <h2>Mike Ross</h2>
-          <p class="title">Art Director</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>mike@example.com</p>
-          <p><button class="button">Contact</button></p>
+        <div class="column">
+          <div class="card">
+            <img alt="Mike" src="images/client/owner.jpeg" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="column">
-      <div class="card">
-        <img alt="John" src="images/client/owner.jpeg" style="width:100%">
-        <div class="container">
-          <h2>John Doe</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>john@example.com</p>
-          <p><button class="button">Contact</button></p>
+        <div class="column">
+          <div class="card">
+            <img alt="John" src="images/client/owner.jpeg" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>john@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
     </div>
   </section>
 
   <!-- Section-Start -->
-  <section class="bg-light-alt padding-large-top">
+  <section class="padding-large-top" id="fun-facts">
     <div class="container">
       <div class="title text-center">
         <h2>Fun facts</h2>
-        <div class="shape1"><i class="flaticon flaticon-mustache-shape"></i></div>
+        <div class="shape1"></div>
         <p>They call him Flipper Flipper faster than lightning. No one you see is smarter than he so join us her are
           sure to get a smile from seven stranded. </p>
       </div><!-- tittle -->
       <div class="row text-center">
-        <div class="col-md-3 col-sm-3 col-sx-6 ">
-          <div class="progress-work progress-border-icon">
-            <div class="counter large-text">2500</div>
-           
+        <div class="col-md-3 col-sm-3  ">
+          <div class="fun-facts-work fun-facts-border-icon">
+            <div class="counter large-text">250</div>
+
             <p>Happy Clients</p>
           </div>
         </div>
         <!-- col-md-3 close -->
-        <div class="col-md-3 col-sm-3 col-sx-6">
-          <div class="progress-work progress-border-icon">
+        <div class="col-md-3 col-sm-3 ">
+          <div class="fun-facts-work fun-facts-border-icon">
             <div class="counter large-text">500</div>
-           
+
             <p>coffee cups</p>
           </div>
         </div>
         <!-- col-md-3 close -->
-        <div class="col-md-3 col-sm-3 col-sx-6">
-          <div class="progress-work progress-border-icon">
+        <div class="col-md-3 col-sm-3 ">
+          <div class="fun-facts-work fun-facts-border-icon">
             <div class="counter large-text">150</div>
-           
+
             <p>stylers</p>
           </div>
         </div>
         <!-- col-md-3 close -->
-        <div class="col-md-3 col-sm-3 col-sx-6">
-          <div class="progress-work">
+        <div class="col-md-3 col-sm-3 ">
+          <div class="fun-facts-work">
             <div class="counter large-text">45</div>
-           
+
             <p>branches</p>
           </div>
         </div>
@@ -286,51 +301,52 @@
   <!--  Section-End -->
 
 
- <!-- Footer-Start -->
- <footer class="dark-bg">
-  <div class="container">
-    <div class="row footer-style2">
-      <div class="about-author">
-        <div class="widget">
-          <div class="logo"><a href="index.html">
-              <h1><img alt="logo" src="images/logo2.png"></h1>
-            </a></div>
-          <p>These days are all Happy and Free these days are all share them with me oh baby the Brady Bunch the Brady
-            Bunch that's the way we all became the Bunch Flipper Flipper.</p>
-          <div class="social-icons">
-            <a href="#"><i class="fa fa-instagram"></i></a>
+  <!-- Footer-Start -->
+  <footer class="dark-bg">
+    <div class="container">
+      <div class="row footer-style2">
+        <div class="about-author">
+          <div class="widget">
+            <div class="logo"><a href="index.html">
+                <h1><img alt="logo" src="images/logo.png"></h1>
+              </a></div>
+            <p>These days are all Happy and Free these days are all share them with me oh baby the Brady Bunch the Brady
+              Bunch that's the way we all became the Bunch Flipper Flipper.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="google-map">
-        <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
-            frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-            style="height:100%;width:100%;border:0;"></iframe>
-        </div><a class="from-embedmap-code" href="https://kbj9qpmy.com/bp" id="enable-maps-data">Broadband
-          Providers</a>
-        <style>
-          #my-map-canvas img {
-            max-width: none !important;
-            background: none !important;
-            font-size: inherit;
-            font-weight: inherit;
-          }
-        </style>
-      </div>
+        <div class="google-map">
+          <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+              frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              style="height:100%;width:100%;border:0;"></iframe>
+          </div>
+          <style>
+            #my-map-canvas img {
+              max-width: none !important;
+              background: none !important;
+              font-size: inherit;
+              font-weight: inherit;
+            }
+          </style>
+        </div>
 
 
-    </div><!-- .row -->
-    <div class="copyright-bar">
-      
-<a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" border="0" height="59" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" title="Credit Card Logos" width="413" /></a>
+      </div><!-- .row -->
+      <div class="copyright-bar">
 
-      <p class="copyright">BeBoss Barber &copy; Copyright 2024. All Rights Reserved</p>
-    </div><!-- .copyright-bar -->
-  </div>
-</footer>
-<!-- Footer-End -->
+        <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos"
+            border="0" height="59" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png"
+            title="Credit Card Logos" width="50%" /></a>
+
+        <p class="copyright">BeBoss Barber &copy; Copyright 2024. All Rights Reserved</p>
+      </div><!-- .copyright-bar -->
+    </div>
+  </footer>
+  <!-- Footer-End -->
 </body>
 
 </html>
