@@ -821,8 +821,12 @@ footer .widget ul li {
 	border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 .follow-us span {
 	padding-right: 12px;
+}
+.follow-us ul{
+	display: unset;
 }
 
 .follow-us ul li {
