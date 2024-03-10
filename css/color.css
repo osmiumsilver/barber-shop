@@ -1,7 +1,10 @@
 .about-us-icon i, .color-text, .footer-nav ul li a:hover, .footer-style3 .social-icon-circle a, .header-menu .active, .header-nav .menu > li > a.active:before, .header-nav .menu > li > a:hover, .header-nav .menu > ul li ul li a:hover, .social-icon-circle a, .social-icons i, .style-single-item:hover h5 {
-    color: #FFFFFF
+    color: #bb8c28
 }
+.tab-content-inner{
+	background: rgba(0, 0, 0, 0.7);
 
+}
 .item-name, .title p, .widget p, a, h2, h3, h4, h5 {
     color: #333
 }
