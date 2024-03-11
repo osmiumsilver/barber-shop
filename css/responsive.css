@@ -37,7 +37,7 @@
 @media (max-width:  576px) {
 
 
-    .portfolio-content-inner
+    .gallery-content-inner
     {
         display: none;
     }
@@ -86,7 +86,11 @@
         font-size: 0.6rem
     }
 
-
+    .client-say-quote {
+ 
+        font-size: 1em;
+    }
+    
 }
 
 @media only screen and (min-width: 401px) and (max-width: 600px) and (orientation : portrait) {
@@ -155,9 +159,9 @@
     }
 
 
-    .portfolio-style2 .portfolio-content {
+    .gallery-style2 .gallery-content {
 
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .navbar-menu {
@@ -222,7 +226,7 @@
         display: unset;
     }
 
-    .our-portfolio-area .row {
+    .our-gallery-area .row {
         display: flex;
         align-items: center;
         flex-direction:column
