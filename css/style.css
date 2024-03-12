@@ -1499,7 +1499,7 @@ input[type="checkbox"]:checked ~ .gallery-single-item > img {
 }
 .img-slider img {
   height: 540px;
-  width: 1080px;
+  min-width: 1080px;
 }
 @keyframes slide {
   0% {

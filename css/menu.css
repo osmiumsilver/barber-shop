@@ -14,10 +14,10 @@
   
   @keyframes glow {
     from {
-      text-shadow: 0 0 10px var(--glow-color-start), 0 0 20px #fff, 0 0 30px #00cbe6, 0 0 40px #00a5e6, 0 0 50px #00b4e6, 0 0 60px #0096e6, 0 0 70px #00a5e6;
+      text-shadow: 0 0 10px #000, 0 0 20px #fff, 0 0 30px #00cbe6, 0 0 40px #00a5e6, 0 0 50px #00b4e6, 0 0 60px #0096e6, 0 0 70px #00a5e6;
     }
     to {
-      text-shadow: 0 0 20px var(--glow-color-start), 0 0 30px var(--glow-color-end), 0 0 40px var(--glow-color-end), 0 0 50px var(--glow-color-end), 0 0 60px var(--glow-color-end), 0 0 70px var(--glow-color-end), 0 0 80px var(--glow-color-end);
+      text-shadow: 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000, 0 0 80px #000;
     }
   }
   
