@@ -9,6 +9,16 @@ body {
   line-height: 26px;
   overflow-x: hidden;
 }
+
+
+.offer-area .container h2{
+  margin-top: 50px;
+  margin-bottom: 0%;
+
+}
+
+
+
 input[type="email"],
 input[type="password"],
 input[type="search"],
@@ -1498,8 +1508,8 @@ input[type="checkbox"]:checked ~ .gallery-single-item > img {
   box-sizing: border-box;
 }
 .img-slider img {
-  height: 540px;
-  width: 1080px;
+  height: 520px;
+  min-width: 1080px;
 }
 @keyframes slide {
   0% {
