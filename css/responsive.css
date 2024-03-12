@@ -6,13 +6,16 @@
   text-align: right;
 }
 .container {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  --boxsize: 1.5rem;
+  padding-right: calc(var(--boxsize) * 0.5);
+  padding-left: calc(var(--boxsize) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  overflow:hidden;
 }
+
+
+/*all four div locaters*/
 @media (max-width: 576px) {
   .gallery-content-inner {
     display: none;
@@ -36,6 +39,7 @@
     max-width: 1320px;
   }
 }
+/*mobile then*/
 @media only screen and (min-width: 200px) and (max-width: 400px) and (orientation: portrait) {
   .topbar .container {
     font-size: 0.6rem;
@@ -43,13 +47,25 @@
   .client-say-quote {
     font-size: 1em;
   }
+
 }
+/*tablet special*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer-style2 > div{
+padding: 30px;
+  }
   .header-nav .container {
     max-width: unset;
   }
 }
+
+/*not for desktop*/
 @media only screen and (min-width: 200px) and (max-width: 1024px) and (orientation: portrait) {
+
+  .footer-style2 {
+    flex-direction:column;
+    align-items: center;
+  }
   .cookiebanner {
     display: none;
   }
@@ -127,6 +143,7 @@
   }
   .our-work-area-style2 .our-work-area-style {
     display: grid;
+    justify-content: center!important;
   }
   .product-grid {
     display: block;
@@ -152,6 +169,9 @@
   .our-work-area {
     padding: 0 15px;
   }
+
+
+
   .style-single-slide {
     margin-left: 20px;
     margin-right: 20px;
@@ -217,9 +237,9 @@
   .header-nav .menu > li {
     padding-left: 0;
   }
-  .social-icons i {
-    padding-right: 18px;
-  }
+  /*.social-icons i {*/
+  /*  padding-right: 18px;*/
+  /*}*/
   .work-image-holder img {
     max-width: 100%;
   }
@@ -235,6 +255,8 @@
     margin-bottom: 0;
   }
 }
+
+/*for super wide screen*/
 @media only screen and (min-width: 2400px) {
   .our-work-area-style2 {
     max-width: 80%;
