@@ -7,14 +7,28 @@
     animation: glow 1s ease-in-out infinite alternate;
   }
   
+  :root {
+    --glow-color-start: #000; /* Black color */
+    --glow-color-end: #000; /* Black color */
+  }
+  
   @keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--glow-color-start), 0 0 20px #fff, 0 0 30px #00cbe6, 0 0 40px #00a5e6, 0 0 50px #00b4e6, 0 0 60px #0096e6, 0 0 70px #00a5e6;
+    }
+    to {
+      text-shadow: 0 0 20px var(--glow-color-start), 0 0 30px var(--glow-color-end), 0 0 40px var(--glow-color-end), 0 0 50px var(--glow-color-end), 0 0 60px var(--glow-color-end), 0 0 70px var(--glow-color-end), 0 0 80px var(--glow-color-end);
+    }
+  }
+  
+  /* @keyframes glow {
     from {
       text-shadow: 0 0 10px #000, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
     to {
       text-shadow: 0 0 20px #000, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  }
+  } */
 
 .css-menu, .css-menu ul, .css-menu ul ul li, .css-menu ul ul li a {
     padding-top: calc(1%);

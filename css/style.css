@@ -463,7 +463,9 @@ section {
 /* ================================= */
 /*Heaader Slider 1*/
 .slider-item-index2-1 {
-	background: url("../images/slider/slider.jpg") no-repeat scroll center center / cover;
+	background: url("../images/slider/H.avif") no-repeat scroll center center / cover;
+	height: 450px;
+	image-resolution:inherit;
 }
 
 
