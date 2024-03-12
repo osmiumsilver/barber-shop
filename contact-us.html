@@ -10,14 +10,20 @@
   <link rel="stylesheet" href="css/color.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/menu.css">
-    <link href="css/contact-style.css" rel="stylesheet">
+  <link href="css/contact-style.css" rel="stylesheet">
   <script src="js/slide.js"></script>
   <script src="js/nice.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/app.js"></script>
+  <style>
+    ::placeholder {
+      color: white;
+      opacity: 1;
+      /* Firefox */
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- Start-Header -->
   <header class="fixed-header">
     <div class="topbar dark-bg">
@@ -36,28 +42,28 @@
         </div> <!-- .row -->
       </div>
     </div><!-- .topbar -->
-    <nav class="header-nav" >
+    <nav class="header-nav">
       <div class="container sticky-header">
         <div class="row main-menu-style2">
-<input class="navBtn" id="navBtn" style="display:none;" type="checkbox"/>
+          <input class="navBtn" id="navBtn" style="display:none;" type="checkbox" />
           <div class="logo"><a href="index.html"><img alt="Barber" src="images/logo.png"></a></div>
 
-          
-            <div class="css-menu">
-              <ul class="menu list-inline">
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="service.html">Services</a></li>
+          <div class="css-menu">
+            <ul class="menu list-inline">
+
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="service.html">Services</a></li>
 				  <li><a href="gallery.html">gallery</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact-us.html"  class="active">Contact</a></li>
-              </ul>
-            </div>
-            <label class="navbar-menu" for="navBtn"></label>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a class="active" href="contact-us.html">Contact</a></li>
+            </ul>
           </div>
+          <label class="navbar-menu" for="navBtn"></label>
         </div>
+      </div>
 
     </nav>
   </header>
@@ -65,128 +71,64 @@
 
   <section class=""><!-- appoinment-area -->
 
-  <div class="container">
-      <!-- <span class="big-circle"></span> -->
-      <!-- <contact-us src="contact-us/shape.png" class="square" alt="" /> -->
+    <div class="container">
       <div class="form">
-          <div class="contact-info">
-              <h3 class="title">Let's get in touch</h3>
-              <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                  dolorum adipisci recusandae praesentium dicta!
-              </p>
-              <div class="info">
-                  <div class="information">
-                      <img alt="" class="icon" src="images/contact-us/location.png" />
-                      <p>92 Cherry Drive Uniondale, NY 11553</p>
-                  </div>
-                  <div class="information">
-                      <img alt="" class="icon" src="images/contact-us/email.png" />
-                      <p>lorem@ipsum.com</p>
-                  </div>
-                  <div class="information">
-                      <img alt="" class="icon" src="images/contact-us/phone.png" />
-                      <p>123-456-789</p>
-                  </div>
-              </div>
-
-              <div class="social-media">
-                  <p>Connect with us :</p>
-                  <!-- <div class="social-icons">
-                      <a href="#">
-                          <i class="fab fa-facebook-f"></i>
-                      </a>
-                      <a href="#">
-                          <i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                          <i class="fab fa-instagram"></i>
-                      </a>
-                      <a href="#">
-                          <i class="fab fa-linkedin-in"></i>
-                      </a>
-                  </div> -->
-              </div>
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
+          <div class="info">
+            <div class="information">
+              <img alt="" class="icon" src="images/contact-us/location.png" />
+              <p>92 Cherry Drive Uniondale, NY 11553</p>
+            </div>
+            <div class="information">
+              <img alt="" class="icon" src="images/contact-us/email.png" />
+              <p>lorem@ipsum.com</p>
+            </div>
+            <div class="information">
+              <img alt="" class="icon" src="images/contact-us/phone.png" />
+              <p>123-456-789</p>
+            </div>
           </div>
 
-          <div class="contact-form">
-              <span class="circle one"></span>
-              <span class="circle two"></span>
-
-              <form action="index.html" autocomplete="off">
-                  <h3 class="title">Contact us</h3>
-                  <div class="input-container">
-                      <input class="input" name="name" type="text" />
-                      <label for="">Username</label>
-                      <span>Username</span>
-                  </div>
-                  <div class="input-container">
-                      <input class="input" name="email" type="email" />
-                      <label for="">Email</label>
-                      <span>Email</span>
-                  </div>
-                  <div class="input-container">
-                      <input class="input" name="phone" type="tel" />
-                      <label for="">Phone</label>
-                      <span>Phone</span>
-                  </div>
-                  <div class="input-container textarea">
-                      <textarea class="input" name="message"></textarea>
-                      <label for="">Message</label>
-                      <span>Message</span>
-                  </div>
-                  <input class="btn" type="submit" value="Send" />
-              </form>
+          <div class="social-media">
+            <p>Connect with us :</p>
           </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input class="input" name="name" placeholder="EnterYour Name..." style="color: white;" type="text" />
+            </div>
+            <div class="input-container">
+              <input class="input" name="email" placeholder="Enter Your Email..." style="color: white;" type="email" />
+            </div>
+            <div class="input-container">
+              <input class="input" name="phone" placeholder="Enter Your Phone..." style="color: white;" type="tel" />
+            </div>
+            <div class="input-container textarea">
+              <textarea class="input" name="message" placeholder="Enter Your Message..."
+                style="color: white;"></textarea>
+              <!-- <label for="">Message</label>
+              <span>Message</span> -->
+            </div>
+            <input class="btn" type="submit" value="Send" />
+          </form>
+        </div>
       </div>
-  </div>
+    </div>
   </section>
 
-<!--    <section class="">&lt;!&ndash; appoinment-area &ndash;&gt;-->
-<!--        <div class="appoinment-area">-->
-<!--            <div class="container">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-6">-->
-<!--                        <div class="title text-center title-margin-bottom-large">-->
-<!--                            <h2>CONTACT US ONLINE</h2>-->
-<!--                            <div class="shape1"><i class="perch-comb-double"></i></div>-->
-<!--                            <p>Not sure about what you want? Fill out the form below to send us a message! </p>-->
-<!--                        </div>&lt;!&ndash; tittle &ndash;&gt;-->
-<!--                        <div class="col-md-12">-->
-<!--                  <form>-->
-<!--                    <div>-->
-<!--                      <div class="col-md-6">-->
-<!--                        <input type="text" class="form-control" placeholder="First name *" required="">-->
-<!--						  <input type="text" class="form-control" placeholder="Last name *" required="">-->
-<!--                      </div>                  -->
-<!--                      <div class="col-md-6">-->
-<!--                        -->
-<!--                      </div>-->
-<!--                    </div>&lt;!&ndash; .row &ndash;&gt;-->
-<!--                    <input type="email" class="form-control" placeholder="Email" required="">-->
-<!--                 <div><textarea class="form-control" placeholder="Your Comments"></textarea>            </div>          -->
-<!--                    <div class="text-center">-->
-<!--                      <div class="padding-medium-bottom text-center">-->
-<!--                        <input type="submit" class="btn btn-default-border-less" value="submit">-->
-<!--                      </div>-->
-<!--                    </div>&lt;!&ndash; .row &ndash;&gt;-->
-<!--                  </form>&lt;!&ndash; form &ndash;&gt;-->
-<!--                </div>-->
-
-<!--                    </div>-->
-<!--                    <div class="col-md-6">-->
-<!--                        <div class="appoinment-image-holder">-->
-<!--                            <img src="images/appoinment/appoinment.png" alt="image">-->
-<!--                        </div>&lt;!&ndash; .appoinment-image-holder &ndash;&gt;-->
-<!--                    </div>&lt;!&ndash; .col-md-5 &ndash;&gt;-->
-<!--                </div>&lt;!&ndash; .row &ndash;&gt;-->
-<!--            </div>&lt;!&ndash; .container &ndash;&gt;-->
-<!--        </div>-->
-<!--    </section>-->
-<!--    &lt;!&ndash;  Section-End &ndash;&gt;-->
-
- <!-- Footer-Start -->
- <footer class="dark-bg">
+  <!-- Footer-Start -->
+  <footer class="dark-bg">
     <div class="container">
       <div class="row footer-style2">
         <div class="about-author">
@@ -209,13 +151,13 @@
             <div class="seperator2"></div>
             <p>Sign up for latest deals from us!</p>
             <div class="header-search newsletter">
-              <form>                      
-               <input class="form-control" placeholder="Your Email Here" required="" type="email">
-               <input class="form-control submit-button" type="submit" value="submit">
+              <form>
+                <input class="form-control" placeholder="Your Email Here" required="" type="email">
+                <input class="form-control submit-button" type="submit" value="submit">
                 <i class="fa fa-paper-plane"></i>
-              </form>                     
+              </form>
             </div>
-            <div class="follow-us">                    
+            <div class="follow-us">
               <ul class="list-inline">
                 <li><span>Follow us: </span></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -225,9 +167,9 @@
             </div>
           </div>
         </div>
-<div class="google-map">
-          <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
-              frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+        <div class="google-map">
+          <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
               style="height:100%;width:100%;border:0;"></iframe>
           </div>
           <style>
@@ -243,8 +185,10 @@
 
       </div><!-- .row -->
       <div class="copyright-bar">
-        
-<a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" border="0" height="59" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" title="Credit Card Logos" width="50%" /></a>
+
+        <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" border="0" height="59"
+            src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" title="Credit Card Logos"
+            width="50%" /></a>
 
         <p class="copyright">BeBoss Barber &copy; Copyright 2024. All Rights Reserved</p>
       </div><!-- .copyright-bar -->

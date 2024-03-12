@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ 
   }
   
   body,
   input,
   textarea {
     font-family: "Poppins", sans-serif;
+
   }
   
   .container1 {
@@ -15,7 +17,7 @@
     width: 100%;
     /* min-height: 100vh; */
     /* padding: 2rem; */
-    background-color: #777777;
+    background-color: white;
     /* overflow: hidden; */
     display: flex;
     align-items: center;
@@ -29,16 +31,17 @@
     height: 100%;
     /*max-width: 850px;*/
     background-color: #fff;
+   
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     /* z-index: 1000; */
     overflow: hidden;
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(2, 1fr);
   }
   
   .contact-form {
-    background-color: #1abc9c;
+    background-color: black;
     position: relative;
   }
   
@@ -78,6 +81,7 @@
     z-index: 10;
     overflow: hidden;
     position: relative;
+
   }
   
   .title {
@@ -99,7 +103,9 @@
     border: 2px solid #fafafa;
     background: none;
     padding: 0.6rem 1.2rem;
-    color: #fff;
+
+    
+    /* background-color: #fff; */
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
@@ -122,6 +128,8 @@
     transform: translateY(-50%);
     padding: 0 0.4rem;
     color: #fafafa;
+    
+    /* //// */
     font-size: 0.9rem;
     font-weight: 400;
     pointer-events: none;
@@ -132,6 +140,7 @@
   .input-container.textarea label {
     top: 1rem;
     transform: translateY(0);
+    /* color: #fafafa; */
   }
   
   .btn {
@@ -209,13 +218,13 @@
   }
   
   .text {
-    color: #333;
+    color: black;
     margin: 1.5rem 0 2rem 0;
   }
   
   .information {
     display: flex;
-    color: #555;
+    color: black;
     margin: 0.7rem 0;
     align-items: center;
     font-size: 0.95rem;
@@ -372,6 +381,7 @@
   
     .input {
       padding: 0.45rem 1.2rem;
+      /* color: #fafafa; */
     }
   
     .btn {
