@@ -11,7 +11,6 @@
   padding-left: calc(var(--boxsize) * 0.5);
   margin-right: auto;
   margin-left: auto;
-  overflow:hidden;
 }
 
 
@@ -47,6 +46,9 @@
   .client-say-quote {
     font-size: 1em;
   }
+  .working-week{
+    column-count: 2;
+  }
 
 }
 /*tablet special*/
@@ -81,7 +83,7 @@ padding: 30px;
   .working-week {
     font-size: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
     margin-left: unset;
   }
   .working-day {
@@ -184,7 +186,7 @@ padding: 30px;
     text-align: left;
   }
   .working-hour-area > .container {
-    max-width: 420px;
+    max-width: 380px;
   }
   .header-nav .logo,
   .topbar {
