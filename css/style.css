@@ -9,6 +9,16 @@ body {
   line-height: 26px;
   overflow-x: hidden;
 }
+
+
+.offer-area .container h2{
+  margin-top: 50px;
+  margin-bottom: 0%;
+
+}
+
+
+
 input[type="email"],
 input[type="password"],
 input[type="search"],
