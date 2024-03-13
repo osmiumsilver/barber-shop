@@ -1509,7 +1509,6 @@ input[type="checkbox"]:checked ~ .gallery-single-item > img {
   box-sizing: border-box;
 }
 .img-slider img {
-
   height: 540px;
   min-width: 1080px;
 }
