@@ -12,21 +12,11 @@
 
   }
   
-  .container1 {
-    position: relative;
-    width: 100%;
-    /* min-height: 100vh; */
-    /* padding: 2rem; */
-    background-color: white;
-    /* overflow: hidden; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   
   .form {
-    margin-top: 11.5px;
-    margin-bottom: 11.5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
     width: 100%;
     height: 100%;
     /*max-width: 850px;*/
@@ -242,17 +232,17 @@
   .social-media p {
     color: #333;
   }
-  
-  .social-icons {
-    display: flex;
-    margin-top: 0.5rem;
-  }
+
+/*.social-icons {*/
+/*  display: flex;*/
+/*  margin-top: 0.5rem;*/
+/*}*/
   
   .social-icons a {
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #1abc9c, #149279);
+    /*background: linear-gradient(45deg, #1abc9c, #149279);*/
     color: #fff;
     text-align: center;
     line-height: 35px;
@@ -275,39 +265,8 @@
     right: 50px;
     opacity: 0.3;
   }
-  
-  .big-circle {
-    position: absolute;
-    /* width: 500px;
-    height: 500px;
-    border-radius: 50%; */
-    /* background: linear-gradient(to bottom, #1cd4af, #159b80); */
-    /* bottom: 50%; */
-    right: 50%;
-    transform: translate(-40%, 38%);
-  }
-  
-  .big-circle:after {
-    content: "";
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    background-color: #fafafa;
-    border-radius: 50%;
-    top: calc(50% - 180px);
-    left: calc(50% - 180px);
-  }
-  
-  .square {
-    position: absolute;
-    height: 400px;
-    /* top: 50%; */
-    left: 50%;
-    transform: translate(181%, 11%);
-    opacity: 0.2;
-  }
-  
-  @media (max-width: 850px) {
+
+@media (max-width: 850px) {
     .form {
       grid-template-columns: 1fr;
     }
@@ -324,19 +283,8 @@
       left: initial;
       right: 70px;
     }
-  
-    .square {
-      transform: translate(140%, 43%);
-      height: 350px;
-    }
-  
-    .big-circle {
-      bottom: 75%;
-      transform: scale(0.9) translate(-40%, 30%);
-      right: 50%;
-    }
-  
-    .text {
+
+  .text {
       margin: 1rem 0 1.5rem 0;
     }
   
@@ -348,13 +296,8 @@
     .contact-info:before {
       display: none;
     }
-  
-    .square,
-    .big-circle {
-      display: none;
-    }
-  
-    form,
+
+form,
     .contact-info {
       padding: 1.7rem 1.6rem;
     }

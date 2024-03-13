@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <title>Barber</title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="js/slide.js"></script>
+    <script src="js/nice.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/collapse.js"></script>
+
+</head>
+
+<body>
+<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+
+<!-- Start-Header -->
+<header class="fixed-header">
+    <div class="topbar dark-bg">
+        <div class="container">
+            <div class="row text-white" style="justify-content: space-between">
+                <div class="social-icons">
+                    <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div style="text-align: right !important;">
+                    <ul>
+                        <li><i class="fa fa-phone"></i> <span>1-800-23-456-7890</span></li>
+                        <li><i class="fa fa-home"></i> <span>6 Lake Road, Portsmouth, Hampshire, United Kingdom</span>
+                        </li>
+                        <li><i class="fa fa-envelope"></i> <span> nfo@domainname.com</span></li>
+                    </ul>
+                </div>
+            </div> <!-- .row -->
+        </div>
+    </div><!-- .topbar -->
+    <nav class="header-nav">
+        <div class="container sticky-header">
+            <div class="row main-menu-style2">
+                <input class="navBtn" id="navBtn" style="display:none;" type="checkbox"/>
+                <div class="logo"><a href="index.html"><img alt="Barber" src="images/logo.png"></a></div>
+
+
+                <div class="css-menu">
+                    <ul class="menu list-inline">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="service.html">Services</a>
+
+
+                            <ul>
+                                <li><a href="service.html#fade">FADE</a></li>
+                                <li><a href="service.html#short">SHORT</a></li>
+                                <li><a href="service.html#thick">THICK</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">gallery</a>
+
+                            <ul>
+                                <li><a href="gallery.html">images</a></li>
+                                <li><a href="gallery-videos.html">videos</a></li>
+
+                            </ul>
+
+                        </li>
+                        <li><a href="products.html">Products</a>
+
+                            <ul>
+                                <li><a class="active" href="cart.html">cart</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="faq.html">FAQ</a></li>
+
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <label class="navbar-menu" for="navBtn"></label>
+            </div>
+        </div>
+
+    </nav>
+</header>
+<!-- End-Header -->
+<div class="about-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center">
+                <div class="heading-table">
+                    <div class=" breadcrumb">
+                        <div class="header-menu">
+                            <ul class="list-inline">
+                                <li><a href="index.html">Home / </a></li>
+                                <li><a href="index.html">Products / </a></li>
+
+                                <li><span class="active">Cart</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .about-header -->
+
+<div class="padding-large-top-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h3>Shopping Cart Summary</h3>
+                <div>
+                    <table class="table table-bordered cart-table">
+                        <thead class="text-center">
+                        <tr>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                        </tr><!-- .tr -->
+                        </thead><!-- .thead -->
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="cart-image">
+                                    <img alt="cart image" src="images/product/product1.png">
+                                </div>
+                            </td><!-- .cart-image -->
+                            <td>Hair Dryer</td>
+                            <td>$90.00</td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="pe-7s-less"></i></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#"><i class="pe-7s-plus"></i></a></li>
+                                </ul>
+                            </td>
+                            <td class="color-text">$90.00</td>
+                            <td><a class="color-text" href="#"><i class="fa fa-times"></i></a></td>
+                        </tr><!-- .tr -->
+                        <tr>
+                            <td>
+                                <div class="cart-image">
+                                    <img alt="cart image" src="images/product/product2.png">
+                                </div>
+                            </td><!-- .cart-image -->
+                            <td>Wooden Comb</td>
+                            <td>$83.00</td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="pe-7s-less"></i></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#"><i class="pe-7s-plus"></i></a></li>
+                                </ul>
+                            </td>
+                            <td class="color-text">$83.00</td>
+                            <td><a class="color-text" href="#"><i class="fa fa-times"></i></a></td>
+                        </tr><!-- .tr -->
+                        <tr>
+                            <td>
+                                <div class="cart-image">
+                                    <img alt="cart image" src="images/product/product3.png">
+                                </div>
+                            </td><!-- .cart-image -->
+                            <td>Hair Spray & Wax</td>
+                            <td>$45.00</td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="pe-7s-less"></i></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#"><i class="pe-7s-plus"></i></a></li>
+                                </ul>
+                            </td>
+                            <td class="color-text">$45.00</td>
+                            <td><a class="color-text" href="#"><i class="fa fa-times"></i></a></td>
+                        </tr><!-- .tr -->
+                        </tbody> <!-- .tbody -->
+                    </table><!-- .table -->
+                </div><!-- .table-responsive -->
+            </div><!-- .col-md -->
+
+            <div class="col-md-4">
+                <h3>Cart Total</h3>
+                <div class="row">
+
+                    <div class="col-md col-sm-12">
+                        <div class="total-cart-price">
+                            <ul>
+                                <li>Total<span class="color-text">$218.00</span></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-default" href="#">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div><!-- .col-md-4 -->
+        </div><!-- .row -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="cart-form">
+                    <form>
+                        <div class="coupon-code clearfix">
+                            <label>COUPON CODE</label>
+                            <input class="form-control" placeholder="Enter Your Coupon Code" required type="text">
+                            <input class="form-control apply-coupon" type="submit" value="Apply Coupon">
+                        </div>
+                    </form><!-- form -->
+                </div><!-- cart-form -->
+            </div><!-- .col-md-8 -->
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .cart-main-content -->
+
+
+<!-- Footer-Start -->
+<footer class="dark-bg">
+    <div class="container">
+        <div class="row footer-style2">
+            <div class="about-author">
+                <div class="widget">
+                    <div class="logo"><a href="index.html">
+                        <h1><img alt="logo" src="images/logo.png"></h1>
+                    </a></div>
+                    <p>Lorem ipsum dolores Lorem Brady Bunch the Brady
+                        Bunch that's the way we all became the Bunch Flipper Flipper.</p>
+                    <div class="social-icons">
+                        <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="middle">
+                <div class="widget">
+                    <h4>Newsletter</h4>
+                    <div class="separator2"></div>
+                    <p>Sign up for latest deals from us!</p>
+                    <div class="header-search newsletter">
+                        <form>
+                            <input class="form-control" placeholder="Your Email Here" required="" type="email">
+                            <input class="form-control submit-button" type="submit" value="submit">
+                            <i class="fa fa-paper-plane"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="google-map">
+                <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                    <iframe
+                            frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                            style="height:100%;width:100%;border:0;"></iframe>
+                </div>
+
+            </div>
+
+
+        </div><!-- .row -->
+        <div class="copyright-bar">
+
+            <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos"
+                                                                             border="0" height="59"
+                                                                             src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png"
+                                                                             title="Credit Card Logos" width="50%"/></a>
+
+            <p class="copyright">BeBoss Barber &copy; Copyright 2024. All Rights Reserved</p>
+        </div><!-- .copyright-bar -->
+    </div>
+</footer>
+<!-- Footer-End -->
+<script data-font-size="22px" data-height="100px" id="cookiebanner"
+        src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
+        type="text/javascript"></script>
+<script src="js/top.js"></script>
+</body>
+
+</html>
