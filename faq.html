@@ -15,14 +15,14 @@
   <script src="js/app.js"></script>
   <link href="./css/faq.css" rel="stylesheet" />
 </head>
-
+<body>
 <!-- Start-Header -->
 <header class="fixed-header">
   <div class="topbar dark-bg">
     <div class="container">
       <div class="row text-white" style="justify-content: space-between">
         <div class="social-icons">
-          <a href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+          <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
         </div>
         <div style="text-align: right !important;">
           <ul>
@@ -46,9 +46,32 @@
 
             <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-            <li><a href="products.html">Products</a></li>
+              <li><a href="service.html">Services</a>
+
+
+                  <ul>
+                      <li><a href="service.html#fade">FADE</a></li>
+                      <li><a href="service.html#short">SHORT</a></li>
+                      <li><a href="service.html#thick">THICK</a></li>
+
+                  </ul>
+              </li>
+              <li><a href="gallery.html">gallery</a>
+
+                  <ul>
+                      <li><a href="gallery.html">images</a></li>
+                      <li><a href="gallery-videos.html">videos</a></li>
+
+                  </ul>
+
+              </li>
+              <li><a href="products.html">Products</a>
+
+                  <ul>
+                      <li><a href="cart.html">cart</a></li>
+
+                  </ul>
+              </li>
             <li><a class="active" href="faq.html">FAQ</a></li>
             <li><a href="contact-us.html">Contact</a></li>
           </ul>
@@ -59,8 +82,27 @@
 
   </nav>
 </header>
+<!-- End-Header -->
+<div class="about-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center">
+                <div class="heading-table">
+                    <div class=" breadcrumb">
+                        <div class="header-menu">
+                            <ul class="list-inline">
+                                <li><a href="index.html">Home / </a></li>
+                                <li><span class="active">FAQ</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .about-header -->
 
-<body>
+
 <button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
   <section class="padding-large-top-bottom">
     <div class="container">
@@ -146,14 +188,14 @@
             <p>Lorem ipsum dolores Lorem Brady Bunch the Brady
               Bunch that's the way we all became the Bunch Flipper Flipper.</p>
             <div class="social-icons">
-              <a href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+              <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
         </div>
         <div class="middle">
           <div class="widget">
             <h4>Newsletter</h4>
-            <div class="seperator2"></div>
+              <div class="separator2"></div>
             <p>Sign up for latest deals from us!</p>
             <div class="header-search newsletter">
               <form>
@@ -167,7 +209,7 @@
                 <li><span>Follow us: </span></li>
 
 
-                <li><a href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a></li>
+                <li><a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>

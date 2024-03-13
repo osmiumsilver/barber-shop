@@ -38,7 +38,7 @@ body {
 }
 .offer-area .container h2{
   margin-top: 50px;
-  margin-bottom: 0%;
+  margin-bottom: 0;
 
 }
 
@@ -235,22 +235,9 @@ textarea {
   font-size: 45px;
   line-height: 10px;
 }
-.shape2 {
-  background: url("../images/shape3.png") no-repeat scroll
-    center center;
-  height: 15px;
-  line-height: 15px;
-  margin: 7px 0 35px;
-  text-align: center;
-}
-.seperator1 {
-  background: url("../images/separator1.png") no-repeat scroll
-    left center;
-  height: 3px;
-  line-height: 2px;
-  margin: 14px 0 30px;
-}
-.seperator2 {
+
+
+.separator2 {
   height: 3px;
   line-height: 2px;
   margin: 0 0 27px;
@@ -264,6 +251,12 @@ textarea {
 }
 .title h2 {
   color: #000;
+}
+
+.breadcrumb .active {
+  background-color: unset;
+  padding-left: 2px;;
+
 }
 .title p {
   font-size: 15px;
@@ -681,7 +674,8 @@ footer .widget p {
 .about-us-area .title {
   margin-bottom: 40px;
 }
-.about-us-details li .seperator2 {
+
+.about-us-details li .separator2 {
   margin-left: 108px;
 }
 .about-us-icon i {
@@ -696,33 +690,8 @@ footer .widget p {
   margin-bottom: 46px;
 }
 
-/*About-Us-Style2*/
-.about-us-area-style2 {
-  background: url("../images/about/about-bg.png") no-repeat
-    fixed center center/cover;
-}
-.about-us-details2 .about-us-details {
-  color: #fff;
-  position: relative;
-  z-index: 99;
-}
-.about-us-details2 ul li:hover .about-us-icon i {
-  border-color: #222;
-}
-.about-us-area-style2 .about-us-icon i {
-  border-color: rgba(0, 0, 0, 0.1);
-}
-.about-us-details2 .title h2,
-.about-us-details2 .title p,
-.about-us-details2 ul li h4 {
-  color: #fff;
-}
-.about-us-details2 {
-  padding: 138px 30px 104px 78px;
-  position: relative;
-  z-index: 99;
-}
-  /* ================================= */
+
+/* ================================= */
   /* ------------ SERVICE------------ */
   /* ================================= */
   /*Service-Area*/
@@ -806,7 +775,7 @@ footer .widget p {
 .fun-facts-border-icon:after {
   color: #bfbfbf;
   content: "";
-  font-family: Flaticon;
+  font-family: Flaticon, serif;
   font-size: 40px;
   position: absolute;
   right: -30px;
@@ -822,12 +791,7 @@ footer .widget p {
   margin: 5px 0 0;
   font-weight: 700;
 }
-.fun-facts-work-icon {
-  font-size: 36px;
-  height: 40px;
-  line-height: 40px;
-  width: 40px;
-}
+
 .fun-facts-work p {
   margin-bottom: 0;
   text-transform: uppercase;
@@ -836,13 +800,8 @@ footer .widget p {
   font-size: 40px;
   transform: rotate(45deg);
 }
-.fun-facts-work-style2 {
-  margin: 0;
-  padding-bottom: 25px;
-}
-.fun-facts-border-bottom {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
+
+
 .fun-facts-border-right {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -891,9 +850,7 @@ footer .widget p {
 
   /*Client-SayS*/
 .client-say-area {
-  background: url("../images/client/client-say-bg.jpg")
-    no-repeat scroll center center/cover;
-  background-attachment: fixed;
+  background: url("../images/client/client-say-bg.jpg") no-repeat fixed center center;
 }
 .client-say {
 	position: relative;
@@ -954,10 +911,11 @@ footer .widget p {
   line-height: 72px;
   font-size: 30px;
 }
-.client-say-area-style2 .seperator2,
-.our-work-details .seperator2,
-.tab-content-inner .seperator2,
-.work-experience .seperator2 {
+
+.client-say-area-style2 .separator2,
+.our-work-details .separator2,
+.tab-content-inner .separator2,
+.work-experience .separator2 {
   background-position: center center;
 }
 .work-experience .about-us-icon i {
@@ -1026,10 +984,7 @@ footer .widget p {
 }
 .open.accordion-item-heading {
   margin: 0;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 3px 3px 0 0;
   background-color: #073e63;
   color: #cdd7d8;
 }
@@ -1079,9 +1034,7 @@ footer .widget p {
   text-align: left;
 }
 .working-hour-area-style2 {
-  background: url("../images/working-hour-bg.jpg") no-repeat
-    scroll center center/cover;
-  background-attachment: fixed;
+  background: url("../images/working-hour-bg.jpg") no-repeat fixed center center;
 }
 .working-day .day {
   display: block;
@@ -1395,11 +1348,26 @@ ul li .price {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.cart-image {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  margin: 22px auto;
+  min-width: 100px;
+}
+
+.cart-image img {
+  height: 100px;
+}
+
 .about-header {
+  padding-bottom: 10px;
+  padding-top: 10px;
   background: url("../images/about-header-bg.png")
     no-repeat scroll center center/cover;
   position: relative;
-  min-height: 300px;
 }
 .heading-text {
   font-size: 36px;
@@ -1462,8 +1430,8 @@ input[type="checkbox"]:checked ~ .gallery-single-item > img {
 .gallery-single-item img {
   width: 100%;
   height: auto;
-  max-width: 250px;
 }
+
 .gallery-single-item:after {
   background: hsla(0, 0%, 0%, 0.5) none repeat scroll 0 0;
   content: "";
@@ -1494,7 +1462,8 @@ input[type="checkbox"]:checked ~ .gallery-single-item > img {
 .gallery-single-item:hover .gallery-content {
   opacity: 1;
 }
-.gallery-content .seperator2 {
+
+.gallery-content .separator2 {
   background-position: center center;
   margin-bottom: 12px;
 }
@@ -1612,7 +1581,7 @@ input[type="checkbox"]:checked ~ .gallery-single-item > img {
 	width: 300px;
 	height: 350px;
 	background-color: white;
-	border: 2.5px solid black;
+  border: 3px solid black;
 	display: block;
 	/* margin-left: auto;
     margin-right: auto; */
@@ -1639,15 +1608,12 @@ input[type="checkbox"]:checked ~ .gallery-single-item > img {
   color: #000;
 }
 .section2 .container .items .img img {
-  width: 250px;
+  /*width: 250px;*/
   height: 200px;
   padding: 0;
   transition-duration: 0.8s;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 .section2 .container .items:hover .img img {
   transform: scale(1.21);

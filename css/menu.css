@@ -38,6 +38,27 @@
     box-sizing: border-box
 }
 
+.css-menu ul li ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+    /* hides sublists */
+}
+
+.css-menu ul li:hover ul {
+    display: block;
+    /* shows sub-sublist on hover */
+    margin-left: 0;
+    /* this should be the same width as the parent list item */
+    margin-top: -50px;
+    /* aligns top of sub menu with top of list item */
+}
+
+.css-menu ul li:hover ul li a:hover {
+    color: darkgoldenrod;
+}
+
 .css-menu:after, .css-menu > ul:after {
     content: ".";
     display: block;
