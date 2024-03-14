@@ -103,21 +103,20 @@ h5 {
 
 .col-md,
 .col-md-4,
-.col-md-5,
 .col-md-6,
 .col-md-8,
-.col-sm-12,
+.col-sm-left,
 .col-sm-3,
-.col-sm-6 {
+.col-sm-left {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .col-sm-12,
+  .col-sm-left,
   .col-sm-3,
-  .col-sm-6 {
+  .col-sm-left {
     float: left;
   }
   .col-sm-3 {

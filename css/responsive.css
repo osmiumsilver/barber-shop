@@ -64,7 +64,10 @@ padding: 30px;
 }
 
 /*not for desktop*/
-@media only screen and (min-width: 200px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 200px) and (max-width: 1024px)  {
+  .css-menu ul li:hover ul{
+    margin-top: 0px!important;
+  }
   .main-menu-style2 ul ul
   {
     top:unset
@@ -142,6 +145,14 @@ padding: 30px;
     font-size: 56px;
     color: #fff;
   }
+
+  .css-menu .menu li > ul
+  {display: none!important;}
+  .css-menu .menu li > ul:hover
+  {
+    display: block!important;
+  }
+
   .navBtn:checked ~ .css-menu {
     transform: translateX(0);
     transition: all 0.3s ease-out;
