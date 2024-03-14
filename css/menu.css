@@ -269,7 +269,8 @@
 
     .css-menu ul ul li a {
         padding: 20px 20px 20px 30px;
-        background: 0 0
+        background: 0 0;
+        color: black;
     }
 
     .css-menu ul ul li:hover > a, .css-menu ul ul ul li a {
