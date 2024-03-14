@@ -1,6 +1,8 @@
 // Get the button
 
+
 let dropdownElements = [];
+let openDropdown = null;
 
 function handleResize() {
     const windowWidth = window.innerWidth;
@@ -36,7 +38,14 @@ function handleResize() {
 
 function toggleDropdownMenu(event) {
     const dropdownMenu = event.currentTarget.parentElement.querySelector('.dropdown');
+
+    // Close any open dropdown menu
+    if (openDropdown && openDropdown !== dropdownMenu) {
+        toggleDisplayStyle(openDropdown);
+    }
+
     toggleDisplayStyle(dropdownMenu);
+    openDropdown = dropdownMenu.style.display === 'none' ? null : dropdownMenu;
     event.preventDefault(); // Prevent the link from navigating
 }
 
@@ -50,6 +59,9 @@ function toggleDisplayStyle(element) {
 
 window.addEventListener('resize', handleResize);
 handleResize(); // Initialize on page load
+
+
+
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
