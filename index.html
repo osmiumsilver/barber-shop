@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en-GB">
+
+<!-- BYao Abels -->
+<!--	FLoat menu-->
+<!--	Lots of using flexbot and grip-->
+<!--responsive choices thinking-->
+<!-- Mobile menu navbar	-->
+<!--	the use of container is helpful of shaping the overall layout-->
+<!-- GDPR -->
+<!-- adjacent selector -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Barber</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/color.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <script src="js/slide.js"></script>
+  <script src="js/nice.js"></script>
+</head>
+
+
+<body>
+<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+
+
+  <!-- Start-Header -->
+  <header class="fixed-header">
+    <div class="topbar dark-bg">
+      <div class="container">
+        <div style="justify-content: space-between" class="row text-white">
+          <div class="social-icons">
+            <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div style="text-align: right !important;">
+            <ul>
+              <li><i class="fa fa-phone"></i> <span>1-800-23-456-7890</span></li>
+              <li><i class="fa fa-home"></i> <span>6 Lake Road, Portsmouth, Hampshire, United Kingdom</span></li>
+              <li><i class="fa fa-envelope"></i> <span> nfo@domainname.com</span></li>
+            </ul>
+          </div>
+        </div> <!-- .row -->
+      </div>
+    </div><!-- .topbar -->
+    <nav class="header-nav">
+      <div class="container sticky-header">
+        <div class="row main-menu-style2">
+          <input class="navBtn" id="navBtn" style="display:none;" type="checkbox" />
+          <div class="logo"><a href="index.html"><img alt="Barber" src="images/logo.png"></a></div>
+
+
+          <div class="css-menu">
+            <ul class="menu list-inline">
+
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="service.html">Services</a>
+
+
+                <ul class="dropdown">
+                  <li><a href="service.html#fade">FADE</a></li>
+                  <li><a href="service.html#short">SHORT</a></li>
+                  <li><a href="service.html#thick">THICK</a></li>
+
+                </ul>
+              </li>
+              <li><a href="gallery.html">gallery</a>
+
+                <ul class="dropdown">
+                  <li><a href="gallery.html">images</a></li>
+                  <li><a href="gallery-videos.html">videos</a></li>
+
+                </ul>
+
+              </li>
+              <li><a href="products.html">Products</a>
+
+                <ul class="dropdown">
+                  <li><a href="cart.html">cart</a></li>
+
+                </ul>
+              </li>
+              <li><a href="faq.html">FAQ</a></li>
+
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+          <label class="navbar-menu" for="navBtn"></label>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <!-- End-Header -->
+
+  <div class="header-slider">
+    <div class="slider-item-index2-1 overlay dark-overlay">
+      <div class="slider-content">
+        <h1 class="color-text glow">Welcome to BeBoss Barber</h1>
+        <h2 class="color-text">WE MAKE YOUR WISH STYLE</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section-Start -->
+  <section class="padding-large-top"><!-- .working-experience-area -->
+    <div class="container">
+      <div class="working-experience-area">
+        <div class="title text-center title-margin-bottom-large">
+          <h2>what we do</h2>
+          <div class="shape1"></div>
+          <p>Lorem ipsum dolores Lorem No one you see is smarter than he so join us her are
+            sure to get a smile from seven stranded.</p>
+
+
+          <div class="buttonDiv">
+            <a href="about-us.html"><button class="okButton">
+                CLICK HERE TO FIND OUT MORE
+              </button></a>
+          </div>
+        </div><!-- title -->
+
+
+      </div>
+    </div><!-- .container -->
+  </section>
+  <!--  Section-End -->
+
+  <!-- Section-Start -->
+  <section>
+    <div class="our-work-area-style2">
+      <div class="row our-work-area-style">
+
+        <div class="single-work-image-holder overlay ">
+          <img src="images/our-work/single-work-image1.jpg" alt="image">
+        </div>
+
+
+        <div class="single-work-image-holder overlay">
+          <img src="images/our-work/single-work-image2.jpg" alt="image">
+        </div>
+
+
+
+        <div class="single-work-image-holder overlay">
+          <img src="images/our-work/single-work-image3.jpg" alt="image">
+        </div>
+
+
+        <div class="single-work-image-holder overlay">
+          <img src="images/our-work/single-work-image4.jpg" alt="image">
+        </div>
+
+
+      </div>
+    </div><!-- .our-work-area -->
+  </section>
+  <!--  Section-End -->
+
+  <!-- Section-Start -->
+
+
+  <!-- Section-Start -->
+  <section class="padding-large-top-bottom"><!-- Trendy plans -->
+    <div class="container">
+      <div class="title text-center title-margin-bottom-medium">
+        <h2>OUR plans</h2>
+        <p>Lorem ipsum dolores Lorem No one you see is smarter than he so join us her are
+          sure to get a smile from seven stranded.</p>
+      </div><!-- tittle -->
+      <div class="product-grid" id="index-plan" style="justify-content: space-between">
+
+        
+          <div class="tab-content-outer">
+            <div class="tab-content-inner">
+              <h4 style="color: white;">Manicure</h4>
+              <div class="separator2"></div>
+              <h5 class="color-text">Starts from $30.00</h5>
+              <p> The call him Flippe make me happy</p>
+            </div>
+          </div><!-- .tab-content-outer -->
+      
+       
+          <div class="tab-content-outer">
+            <div class="tab-content-inner">
+              <h4 style="color: white;">Eyebrow Shaping</h4>
+              <div class="separator2"></div>
+              <h5 class="color-text">Starts from $30.00</h5>
+              <p> The call him Flippe make me happy</p>
+            </div>
+          </div><!-- .tab-content-outer -->
+       
+        
+          <div class="tab-content-outer">
+            <div class="tab-content-inner">
+              <h4 style="color: white; min-height: 0;">Nair Art</h4>
+              <div class="separator2"></div>
+              <h5 class="color-text">Starts from $30.00</h5>
+              <p> The call him Flippe make me happy</p>
+            </div>
+          </div><!-- .tab-content-outer -->
+        
+      
+          <div class="tab-content-outer">
+            <div class="tab-content-inner">
+              <h4 style="color: white;">Pedicure</h4>
+              <div class="separator2"></div>
+              <h5 class="color-text">Starts from $30.00</h5>
+              <p> The call him Flippe make me happy</p>
+            </div>
+          </div><!-- .tab-content-outer -->
+       
+      </div>
+      <div class="buttonDiv">
+        <a href="service.html"><button class="okButton">
+            CLICK HERE TO FIND OUT MORE
+          </button></a>
+      </div><!-- .tab-content -->
+    </div><!-- .our-plans -->
+
+  </section>
+  <!--  Section-End -->
+
+  <!-- Section-Start --><!-- client-say-Area-Style2  -->
+  <section class="client-say-area-style2 padding-small-top-bottom">
+    <div class="container">
+
+      <div class="client-say">
+        <div class="mySlides fade">
+          <h4>Mary Jasmine</h4>
+          <p class="client-say-quote">These days m withe way we all became the Brady Bunch the no one you see is smarter
+            than he so
+            joinus faster.</p>
+
+          <div class="client-author">
+            <img src="images/client/client-say-author2.png" class="img-circle" alt="image">
+          </div>
+        </div> 
+        <div class="mySlides fade">
+          <h4>Mary Lolz</h4>
+          <p class="client-say-quote">These dme oe wer faster.</p>
+          <div class="client-author">
+            <img src="images/client/client-say-author2.png" class="img-circle" alt="image">
+          </div>
+        </div>
+
+      </div>
+      <div class="control">
+        <div style="text-align: center">
+          <!-- Next and previous buttons -->
+          <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a id="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-area text-center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer-Start -->
+  <footer class="dark-bg">
+    <div class="container">
+      <div class="row footer-style2">
+        <div class="about-author">
+          <div class="widget">
+            <div class="logo"><a href="index.html">
+                <h1><img alt="logo" src="images/logo.png"></h1>
+              </a></div>
+            <p>Lorem ipsum dolores Lorem Brady Bunch the Brady
+              Lorem ipsum fact that a reader will be distracted by the layout.</p>
+            <div class="social-icons">
+              <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="middle">
+          <div class="widget">
+            <h4>Newsletter</h4>
+            <div class="separator2"></div>
+            <p>Sign up for latest deals from us!</p>
+            <div class="header-search newsletter">
+              <form>                      
+               <input class="form-control" placeholder="Your Email Here" required="" type="email">
+               <input class="form-control submit-button" type="submit" value="submit">
+                <i class="fa fa-paper-plane"></i>
+              </form>                     
+            </div>
+          </div>
+        </div>
+<div class="google-map">
+          <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe title="myFrame"
+              style="height:100%;width:100%;border:0;" frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+          </div>
+
+</div>
+
+
+      </div><!-- .row -->
+      <div class="copyright-bar">
+
+        <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos"
+            border="0" height="59" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png"
+            title="Credit Card Logos" width="50%" /></a>
+
+        <p class="copyright">BeBoss Barber &copy; Copyright 2024. All Rights Reserved</p>
+      </div><!-- .copyright-bar -->
+    </div>
+  </footer>
+  <!-- Footer-End -->
+  <script data-font-size="22px" data-height="100px" id="cookiebanner" src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
+    type="text/javascript"></script>
+<script src="js/top.js"></script>
+</body>
+
+</html>

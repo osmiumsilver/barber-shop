@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <title>Barber</title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/color.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <script src="js/slide.js"></script>
+  <script src="js/nice.js"></script>
+  <script src="js/app.js"></script>
+  <link href="./css/faq.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Start-Header -->
+<header class="fixed-header">
+  <div class="topbar dark-bg">
+    <div class="container">
+      <div class="row text-white" style="justify-content: space-between">
+        <div class="social-icons">
+          <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div style="text-align: right !important;">
+          <ul>
+            <li><i class="fa fa-phone"></i> <span>1-800-23-456-7890</span></li>
+            <li><i class="fa fa-home"></i> <span>6 Lake Road, Portsmouth, Hampshire, United Kingdom</span></li>
+            <li><i class="fa fa-envelope"></i> <span> nfo@domainname.com</span></li>
+          </ul>
+        </div>
+      </div> <!-- .row -->
+    </div>
+  </div><!-- .topbar -->
+  <nav class="header-nav">
+    <div class="container sticky-header">
+      <div class="row main-menu-style2">
+        <input class="navBtn" id="navBtn" style="display:none;" type="checkbox" />
+        <div class="logo"><a href="index.html"><img alt="Barber" src="images/logo.png"></a></div>
+
+
+        <div class="css-menu">
+          <ul class="menu list-inline">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+              <li><a href="service.html">Services</a>
+
+
+                <ul class="dropdown">
+                      <li><a href="service.html#fade">FADE</a></li>
+                      <li><a href="service.html#short">SHORT</a></li>
+                      <li><a href="service.html#thick">THICK</a></li>
+
+                  </ul>
+              </li>
+              <li><a href="gallery.html">gallery</a>
+
+                <ul class="dropdown">
+                      <li><a href="gallery.html">images</a></li>
+                      <li><a href="gallery-videos.html">videos</a></li>
+
+                  </ul>
+
+              </li>
+              <li><a href="products.html">Products</a>
+
+                <ul class="dropdown">
+                      <li><a href="cart.html">cart</a></li>
+
+                  </ul>
+              </li>
+            <li><a class="active" href="faq.html">FAQ</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </div>
+        <label class="navbar-menu" for="navBtn"></label>
+      </div>
+    </div>
+
+  </nav>
+</header>
+<!-- End-Header -->
+<div class="about-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center">
+                <div class="heading-table">
+                    <div class=" breadcrumb">
+                        <div class="header-menu">
+                            <ul class="list-inline">
+                                <li><a href="index.html">Home / </a></li>
+                                <li><span class="active">FAQ</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .about-header -->
+
+
+<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+  <section class="padding-large-top-bottom">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button aria-expanded="false" id="accordion-button-1">
+            <span class="accordion-title">WHAT SERVICES DO YOU OFFER?</span>
+            <span aria-hidden="true" class="icon"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              We offer a wide range of services, including haircuts, beard trims, shaves, hairstyling, scalp treatments,
+              and more. Our experienced barbers are skilled in the latest trends and techniques to help you achieve your
+              desired look.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button aria-expanded="false" id="accordion-button-2">
+            <span class="accordion-title">HOW MUCH DO YOUR SERVICES COST?</span>
+            <span aria-hidden="true" class="icon"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Our pricing varies depending on the service you choose. You can find detailed pricing information on our
+              pricing page or by checking out our web store!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button aria-expanded="false" id="accordion-button-3">
+            <span class="accordion-title">CAN I REQUEST A SPECIFIC BARBER?</span>
+            <span aria-hidden="true" class="icon"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Absolutely! We understand the importance of finding the right barber who understands your style
+              preferences. You can request a specific barber, and we will do our best to accommodate your preference
+              based on availability.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button aria-expanded="false" id="accordion-button-4">
+            <span class="accordion-title">HOW LONG DOES A TYPICAL APPOINTMENT TAKE?</span>
+            <span aria-hidden="true" class="icon"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              The duration of an appointment can vary depending on the service and individual preferences. On average, a
+              haircut appointment takes around 30 - 45 minutes, while other services may take longer. Our barbers
+              prioritize quality and take the time needed to ensure you leave satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button aria-expanded="false" id="accordion-button-5">
+            <span class="accordion-title">WHAT SAFETY MEASURES ARE IN PLACE TO PROTECT - CUSTOMERS?</span>
+            <span aria-hidden="true" class="icon"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Your safety is our top priority. We strictly adhere to all health and safety guidelines. Our barbers
+              follow proper sanitation protocols, use disposable and sterilized tools, and maintain a clean and hygienic
+              environment. We also encourage customers to wear masks and practice social distancing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </section>
+  <!-- Footer-Start -->
+  <footer class="dark-bg">
+    <div class="container">
+      <div class="row footer-style2">
+        <div class="about-author">
+          <div class="widget">
+            <div class="logo"><a href="index.html">
+                <h1><img alt="logo" src="images/logo.png"></h1>
+              </a></div>
+            <p>Lorem ipsum dolores Lorem Brady Bunch the Brady
+              Lorem ipsum fact that a reader will be distracted by the layout.</p>
+            <div class="social-icons">
+              <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="widget">
+            <h4>Newsletter</h4>
+              <div class="separator2"></div>
+            <p>Sign up for latest deals from us!</p>
+            <div class="header-search newsletter">
+              <form>
+                <input class="form-control" placeholder="Your Email Here" required="" type="email">
+                <input class="form-control submit-button" type="submit" value="submit">
+                <i class="fa fa-paper-plane"></i>
+              </form>
+            </div>
+            <div class="follow-us">
+              <ul class="list-inline">
+                <li><span>Follow us: </span></li>
+
+
+                <li><a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="google-map">
+          <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe frameborder="0"  title="myFrame"
+              src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              style="height:100%;width:100%;border:0;"></iframe>
+          </div>
+
+        </div>
+      </div><!-- .row -->
+      <div class="copyright-bar">
+
+        <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" border="0" height="59"
+            src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" title="Credit Card Logos"
+            width="50%" /></a>
+        <p class="copyright">BeBoss Barber &copy; Copyright 2024. All Rights Reserved</p>
+      </div><!-- .copyright-bar -->
+    </div>
+  </footer>
+  <!-- Footer-End -->
+  <script src="./js/faq.js"></script>
+<script src="js/top.js"></script>
+</body>
+
+</html>

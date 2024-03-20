@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/color.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+
+  <!-- <style>
+        contact-us {
+            border-radius: 50%;
+            background-size: cover;
+        }
+    </style> -->
+
+</head>
+
+<body>
+<button id="myBtn" onclick="topFunction()" title="Go to top">Top</button>
+
+  <!-- Start-Header -->
+  <header class="fixed-header">
+    <div class="topbar dark-bg">
+      <div class="container">
+        <div class="row text-white" style="justify-content: space-between">
+          <div class="social-icons">
+            <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div style="text-align: right !important;">
+            <ul>
+              <li><i class="fa fa-phone"></i> <span>1-800-23-456-7890</span></li>
+              <li><i class="fa fa-home"></i> <span>6 Lake Road, Portsmouth, Hampshire, United Kingdom</span></li>
+              <li><i class="fa fa-envelope"></i> <span> nfo@domainname.com</span></li>
+            </ul>
+          </div>
+        </div> <!-- .row -->
+      </div>
+    </div><!-- .topbar -->
+    <nav class="header-nav">
+      <div class="container sticky-header">
+        <div class="row main-menu-style2">
+          <input class="navBtn" id="navBtn" style="display:none;" type="checkbox" />
+          <div class="logo"><a href="index.html"><img alt="Barber" src="images/logo.png"></a></div>
+
+
+          <div class="css-menu">
+            <ul class="menu list-inline">
+
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+                <li><a href="service.html">Services</a>
+
+
+                  <ul class="dropdown">
+                        <li><a href="service.html#fade">FADE</a></li>
+                        <li><a href="service.html#short">SHORT</a></li>
+                        <li><a href="service.html#thick">THICK</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="gallery.html">gallery</a>
+
+                  <ul class="dropdown">
+                        <li><a href="gallery.html">images</a></li>
+                        <li><a href="gallery-videos.html">videos</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a class="active" href="products.html">Products</a>
+
+                  <ul class="dropdown">
+                        <li><a href="cart.html">cart</a></li>
+
+                    </ul>
+                </li>
+              <li><a href="faq.html">FAQ</a></li>
+
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+          <label class="navbar-menu" for="navBtn"></label>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+<!-- End-Header -->
+<div class="about-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center">
+                <div class="heading-table">
+                    <div class=" breadcrumb">
+                        <div class="header-menu">
+                            <ul class="list-inline">
+                                <li><a href="index.html">Home / </a></li>
+                                <li><span class="active">Products</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .about-header -->
+
+  <section>
+    <div class="section">
+      <div class="section1">
+        <div class="img-slider">
+          <img alt="" class="img" src="images/our-work/single-work-image1.jpg">
+          <img alt="" class="img" src="images/our-work/single-work-image2.jpg">
+          <img alt="" class="img" src="images/our-work/single-work-image3.jpg">
+          <img alt="" class="img" src="images/our-work/single-work-image4.jpg">
+          <img alt="" class="img" src="images/slider/C.jpg">
+          <!-- <img alt="" class="img"
+            src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"> -->
+        </div>
+
+      </div>
+      <div class="section2">
+        <div class="container">
+          <div class="items" onclick="redirectToProductPage('product1')">
+            <div class="img img1"><img alt="" src="images/product/product1.png"></div>
+            <div class="name">SHOES</div>
+            <div class="price">$5</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+          </div>
+          <div class="items" onclick="redirectToProductPage('product2')">
+            <div class="img img2"><img alt="" src="images/product/product2.png"></div>
+            <div class="name">MEN's T-SHIRT</div>
+            <div class="price">$6.34</div>
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items" onclick="redirectToProductPage('product3')">
+            <div class="img img3"><img alt="" src="images/product/product3.png"></div>
+            <div class="name">JEANS</div>
+            <div class="price">$5.34</div>
+            <div class="info">Lorem ipsum dolor sit amet.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img alt="" src="images/product/product4.png"></div>
+            <div class="name">WATCH</div>
+            <div class="price">$9.1</div>
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img alt="" src="images/product/product5.png"></div>
+            <div class="name">SMART PHONE</div>
+            <div class="price">$20</div>
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img alt="" src="images/product/product6.png"></div>
+            <div class="name">TELEVISION</div>
+            <div class="price">$18</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img alt="" src="images/product/product7.png"></div>
+            <div class="name">HOODIES</div>
+            <div class="price">$6.7</div>
+            <div class="info">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img alt="" src="images/product/product8.png"></div>
+            <div class="name">DINNER SET</div>
+            <div class="price">$10</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img alt="" src="images/product/product9.png"></div>
+            <div class="name">BLANKETS</div>
+            <div class="price">$9.9</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img alt="" src="images/product/product1.png"></div>
+            <div class="name">LAPTOP</div>
+            <div class="price">$99</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Footer-Start -->
+  <footer class="dark-bg">
+    <div class="container">
+      <div class="row footer-style2">
+        <div class="about-author">
+          <div class="widget">
+            <div class="logo"><a href="index.html">
+                <h1><img alt="logo" src="images/logo.png"></h1>
+              </a></div>
+            <p>Lorem ipsum dolores Lorem Brady Bunch the Brady
+              Lorem ipsum fact that a reader will be distracted by the layout.</p>
+            <div class="social-icons">
+              <a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="middle">
+          <div class="widget">
+            <h4>Newsletter</h4>
+              <div class="separator2"></div>
+            <p>Sign up for latest deals from us!</p>
+            <div class="header-search newsletter">
+              <form>
+                <input class="form-control" placeholder="Your Email Here" required="" type="email">
+                <input class="form-control submit-button" type="submit" value="submit">
+                <i class="fa fa-paper-plane"></i>
+              </form>
+            </div>
+            <div class="follow-us">
+              <ul class="list-inline">
+                <li><span>Follow us: </span></li>
+
+
+                <li><a aria-label="Instagram" href="https://instagram.com/bebossbarber"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="google-map">
+          <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe frameborder="0"  title="myFrame"
+              src="https://www.google.com/maps/embed/v1/place?q=6+Lake+Road,+Portsmouth,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              style="height:100%;width:100%;border:0;"></iframe>
+          </div>
+
+        </div>
+
+
+      </div><!-- .row -->
+      <div class="copyright-bar">
+
+        <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" border="0" height="59"
+            src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" title="Credit Card Logos"
+            width="50%" /></a>
+
+        <p class="copyright">BeBoss Barber &copy; Copyright 2024. All Rights Reserved</p>
+      </div><!-- .copyright-bar -->
+    </div>
+  </footer>
+  <!-- Footer-End -->
+<script src="js/top.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
